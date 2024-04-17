@@ -3,15 +3,15 @@ import logo from '../images/logo-ipsum.svg'
 
 const Layout = ({ children }) => {
   return (
-    <div>
+    <div className="bg-neutral-50">
         <header>
             <div className="container flex items-center justify-between mx-auto py-12">
                 <img className="h-[34px]" src={logo} alt="Logo" />
 
-                <nav className="">
-                    <a className="font-medium pl-12 text-xs uppercase" href="/">Home</a>
-                    <a className="font-medium pl-12 text-xs uppercase" href="/portfolio/">Portfolio</a>
-                    <a className="font-medium pl-12 text-xs uppercase" href="/contact/">Contact Me</a>
+                <nav>
+                    <a className="font-semibold pl-12 text-xs tracking-widest uppercase" href="/">Home</a>
+                    <a className="font-semibold pl-12 text-xs tracking-widest uppercase" href="/portfolio/">Portfolio</a>
+                    <a className="font-semibold pl-12 text-xs tracking-widest uppercase" href="/contact/">Contact Me</a>
                 </nav>
             </div>
         </header>
