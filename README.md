@@ -1,10 +1,10 @@
 <p align="center">
-  <a href="https://www.gatsbyjs.com/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter">
-    <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
-  </a>
+    <a href="https://www.gatsbyjs.com/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter">
+        <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
+    </a>
 </p>
 <h1 align="center">
-  Gatsby Minimal Starter
+    Gatsby Minimal Starter
 </h1>
 
 ## 🚀 Quick start
@@ -51,6 +51,4 @@ Deploy this starter with one click on [Netlify](https://app.netlify.com/signup):
 
 ## Photo credits
 
-### Home page hero
-
-[Andrew Neel](https://www.pexels.com/photo/macbook-pro-on-brown-wooden-table-2312369/)
+- Home page hero - [Andrew Neel](https://www.pexels.com/photo/macbook-pro-on-brown-wooden-table-2312369/)
