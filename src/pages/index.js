@@ -10,11 +10,14 @@ const IndexPage = () => {
 
     return (
         <Layout>
-            <section className="aspect-[2/1] bg-cover bg-center bg-no-repeat w-full" style={heroBg}>
-                <div className="">
-                    <h1>Hey, I'm Nate and I love solving problems with code.</h1>
+            <section className="aspect-[37/20] bg-cover bg-center bg-no-repeat mb-36 relative w-full" style={heroBg}>
+                <div className="absolute bg-white bottom-0 pb-24 px-8 pt-12 w-[41%]">
+                    <h1 className="font-semibold leading-tight text-5xl">Hey, I'm Nate and I love solving problems with code.</h1>
 
-                    <button>About Me</button>
+                    <button className="absolute bg-neutral-800 bottom-0 h-12 font-semibold inline-block left-0 pl-12 text-white text-xs tracking-widest uppercase w-[200px]">
+                        <span className="absolute bg-black bottom-0 h-full left-0 w-12"></span>
+                        About Me
+                    </button>
                 </div>
             </section>
 
