@@ -47,3 +47,8 @@
 Deploy this starter with one click on [Netlify](https://app.netlify.com/signup):
 
 [<img src="https://www.netlify.com/img/deploy/button.svg" alt="Deploy to Netlify" />](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-minimal)
+
+
+## Photo credits:
+
+Home page hero - Andrew Neel - https://www.pexels.com/photo/macbook-pro-on-brown-wooden-table-2312369/
