@@ -1,54 +1,81 @@
-<p align="center">
-    <a href="https://www.gatsbyjs.com/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter">
-        <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
-    </a>
-</p>
-<h1 align="center">
-    Gatsby Minimal Starter
-</h1>
+# Minimalist Portfolio
+A simple static website based on Frontend Mentor's [Minimalist portfolio website challenge](https://www.frontendmentor.io/challenges/minimalist-portfolio-website-LMy-ZRyiE). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
-## 🚀 Quick start
+## Table of contents
 
-1.  **Create a Gatsby site.**
+- [Overview](#overview)
+  - [The brief](#the-brief)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+  - [Continued development](#continued-development)
+  - [Useful resources](#useful-resources)
+- [Author](#author)
+- [Photo credits](#photo-credits)
 
-    Use the Gatsby CLI to create a new site, specifying the minimal starter.
+## Overview
 
-    ```shell
-    # create a new Gatsby site using the minimal starter
-    npm init gatsby
-    ```
+### The brief
 
-2.  **Start developing.**
+Your challenge is to build out this multi-page portfolio website and get it looking as close to the design as possible. The download includes mobile, tablet & desktop designs for a Homepage, Portfolio index page, Portfolio detail pages, and a Contact page. A design system is also included to provide colors, fonts, etc.
 
-    Navigate into your new site’s directory and start it up.
+You can use any tools you like to help you complete the challenge. So if you've got something you'd like to practice, feel free to give it a go.
 
-    ```shell
-    cd my-gatsby-site/
-    npm run develop
-    ```
+Also, seeing as this challenge is to build a portfolio site, please feel free to use it as your own portfolio website when you're finished!
 
-3.  **Open the code and start customizing!**
+Your users should be able to:
 
-    Your site is now running at http://localhost:8000!
+- Click the "About Me" call-to-action on the homepage and have the screen scroll down to the next section
+- Receive an error message when the contact form is submitted if:
+    - The Name, Email Address or Message fields are empty should show "This field is required"
+    - The Email Address is not formatted correctly should show "Please use a valid email address"
+- View the optimal layout for the interface depending on their device's screen size
+- See hover and focus states for all interactive elements on the page
 
-    Edit `src/pages/index.js` to see your site update in real-time!
 
-4.  **Learn more**
+### Finished Project
 
-    - [Documentation](https://www.gatsbyjs.com/docs/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-    - [Tutorials](https://www.gatsbyjs.com/docs/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-    - [Guides](https://www.gatsbyjs.com/docs/how-to/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-    - [API Reference](https://www.gatsbyjs.com/docs/api-reference/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-    - [Plugin Library](https://www.gatsbyjs.com/plugins?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-    - [Cheat Sheet](https://www.gatsbyjs.com/docs/cheat-sheet/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+![Project screenshot](./screenshot.png)
 
-## 🚀 Quick start (Netlify)
+**Live URL:** [Minimalist Portfolio](https://master.dw0h5zausfmzd.amplifyapp.com/)
 
-Deploy this starter with one click on [Netlify](https://app.netlify.com/signup):
+## My process
 
-[<img src="https://www.netlify.com/img/deploy/button.svg" alt="Deploy to Netlify" />](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-minimal)
+### Built with
 
+- [Gatsby](https://gatsbyjs.com/)
+- [React](https://reactjs.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
+
+### Features
+
+- Mobile-first
+- Responsive layouts
+- Accessible
+- Follows best practice
+
+### What I learned
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+### Continued development
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+### Useful resources
+
+- [Website name](https://example.com/) - Lorem ipsum dolor sit amet
+- [Website name](https://example.com/) - Ut enim ad minim veniam
+
+## Author
+
+- Website - [Nate Dev](https://nate-dev.com)
+- Frontend Mentor - [@ntjnh](https://www.frontendmentor.io/profile/ntjnh)
 
 ## Photo credits
 
-- Home page hero - [Andrew Neel](https://www.pexels.com/photo/macbook-pro-on-brown-wooden-table-2312369/)
+- Home page - Hero
+    - **Source:** [Pexels](https://www.pexels.com/photo/macbook-pro-on-brown-wooden-table-2312369/)
+    - **Photographer:** [Andrew Neel](https://www.pexels.com/@andrew/)
