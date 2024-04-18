@@ -1,5 +1,6 @@
 import React from 'react'
 import Layout from '../components/layout'
+import { Link } from 'gatsby'
 import heroPhoto from '../images/home-hero.jpg'
 import natePhoto from '../images/nate.jpg'
 
@@ -22,19 +23,21 @@ const IndexPage = () => {
             </section>
 
             <section className="flex justify-between">
-                <div className="w-1/2">
+                <div className="pr-4 w-1/2">
                     <img className="max-w-full" src={natePhoto} alt="Nate" />
                 </div>
 
                 <article className="w-1/2">
-                    <h2>About Me</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Diam volutpat commodo sed egestas egestas fringilla phasellus. A scelerisque purus semper eget. Cum sociis natoque penatibus et magnis dis parturient montes nascetur. Sit amet nisl suscipit adipiscing bibendum est. Egestas congue quisque egestas diam in. Nunc scelerisque viverra mauris in aliquam sem fringilla ut morbi. At in tellus integer feugiat scelerisque varius. Augue neque gravida in fermentum et sollicitudin ac. Sit amet consectetur adipiscing elit duis tristique. Facilisi etiam dignissim diam quis enim lobortis scelerisque fermentum dui. Massa ultricies mi quis hendrerit dolor magna eget est. Vitae purus faucibus ornare suspendisse. Elementum pulvinar etiam non quam. Urna cursus eget nunc scelerisque. Elementum integer enim neque volutpat ac tincidunt vitae. Consectetur libero id faucibus nisl tincidunt eget nullam non.</p>
+                    <div className="border-y border-slate-300 max-w-[350px] mx-auto pb-12 pt-14">
+                        <h2 className="mb-8 text-4xl">About Me</h2>
+                        <p className="leading-[30px] mb-8">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Diam volutpat commodo sed egestas egestas fringilla phasellus. A scelerisque purus semper eget. Cum sociis natoque penatibus et magnis dis parturient montes nascetur. Sit amet nisl suscipit adipiscing bibendum est. Egestas congue quisque egestas diam in. Nunc scelerisque viverra mauris in aliquam sem fringilla ut morbi. At in tellus integer feugiat scelerisque varius.</p>
 
-                    <a href="/portfolio/">Go to Portfolio</a>
+                        <Link className="border border-black inline-block leading-none px-2.5 py-4 font-semibold text-xs tracking-widest uppercase" to="/portfolio">Go to Portfolio</Link>
+                    </div>
                 </article>
             </section>
 
-            <section>
+            <section className="py-36">
                 <div>
                     <h2>Interested in doing a project together?</h2>
                 </div>
