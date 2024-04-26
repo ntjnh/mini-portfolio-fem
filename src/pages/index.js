@@ -28,22 +28,26 @@ const IndexPage = () => {
                 </div>
 
                 <article className="w-1/2">
-                    <div className="border-y border-slate-300 max-w-[350px] mx-auto pb-12 pt-14">
-                        <h2 className="mb-8 text-4xl">About Me</h2>
-                        <p className="leading-[30px] mb-8">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Diam volutpat commodo sed egestas egestas fringilla phasellus. A scelerisque purus semper eget. Cum sociis natoque penatibus et magnis dis parturient montes nascetur. Sit amet nisl suscipit adipiscing bibendum est. Egestas congue quisque egestas diam in. Nunc scelerisque viverra mauris in aliquam sem fringilla ut morbi. At in tellus integer feugiat scelerisque varius.</p>
+                    <div className="border-y border-slate-300 max-w-[350px] mx-auto pb-10 pt-12">
+                        <h2 className="mb-7 text-4xl">About Me</h2>
+                        <p className="leading-[30px] mb-8">I'm a junior front-end developer looking for a new role in an exciting company. I focus on writing accessible HTML, using modern CSS practices and writing clean JavaScript. When writing JavaScript code, I mostly use React, but I can adapt to whatever tools are required. I'm based in London, UK, but I'm happy working remotely and have experience in remote teams. When I'm not coding, you'll find me outdoors. I love being out in nature whether that's going for a walk, run or cycling. I'd love you to check out my work.</p>
 
-                        <Link className="border border-black inline-block leading-none px-2.5 py-4 font-semibold text-xs tracking-widest uppercase" to="/portfolio">Go to Portfolio</Link>
+                        <Link className="border border-black inline-block leading-none px-3 py-4 font-semibold text-xs tracking-widest uppercase" to="/portfolio/">Go to Portfolio</Link>
                     </div>
                 </article>
             </section>
 
             <section className="py-36">
-                <div>
-                    <h2>Interested in doing a project together?</h2>
-                </div>
+                <div className="flex items-center justify-between">
+                    <div className="w-[30%]">
+                        <h2 className="leading-[2.75rem] text-4xl">Interested in doing a project together?</h2>
+                    </div>
 
-                <div>
-                    <button>Contact Me</button>
+                    <hr className="bg-slate-300 block h-px w-1/2" />
+
+                    <div className="text-right w-[14%]">
+                        <Link className="border border-black inline-block leading-none px-8 py-4 font-semibold text-xs tracking-widest uppercase" to="/contact/">Contact Me</Link>
+                    </div>
                 </div>
             </section>
         </Layout>
