@@ -1,6 +1,7 @@
 import React from 'react'
-import Layout from '../components/layout'
 import { Link } from 'gatsby'
+import Layout from '../components/layout'
+import Seo from '../components/seo'
 import heroPhoto from '../images/home-hero.jpg'
 import natePhoto from '../images/nate.jpg'
 
@@ -54,6 +55,6 @@ const IndexPage = () => {
     )
 }
 
-export default IndexPage
+export const Head = () => <Seo title="Home" />
 
-export const Head = () => <title>NATE</title>
+export default IndexPage
