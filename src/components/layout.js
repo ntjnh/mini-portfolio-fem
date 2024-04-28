@@ -15,9 +15,9 @@ const Layout = ({ children }) => {
                 </Link>
 
                 <nav>
-                    <a className="font-semibold text-cyan-700 text-xs tracking-widest uppercase" href="/">Home</a>
-                    <a className="font-semibold pl-12 hover:text-cyan-700 text-xs tracking-widest uppercase" href="/portfolio/">Portfolio</a>
-                    <a className="font-semibold pl-12 hover:text-cyan-700 text-xs tracking-widest uppercase" href="/contact/">Contact Me</a>
+                    <a className="font-semibold inline-block px-5 py-2 text-cyan-700 text-xs tracking-widest uppercase" href="/">Home</a>
+                    <a className="font-semibold inline-block px-5 py-2 hover:text-cyan-700 text-xs tracking-widest uppercase" href="/portfolio/">Portfolio</a>
+                    <a className="font-semibold inline-block pl-5 py-2 hover:text-cyan-700 text-xs tracking-widest uppercase" href="/contact/">Contact Me</a>
                 </nav>
             </div>
         </header>
