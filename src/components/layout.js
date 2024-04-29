@@ -15,9 +15,9 @@ const Layout = ({ children }) => {
                 </Link>
 
                 <nav>
-                    <a className="font-semibold inline-block px-5 py-2 text-cyan-700 text-xs tracking-widest uppercase" href="/">Home</a>
-                    <a className="font-semibold inline-block px-5 py-2 hover:text-cyan-700 text-xs tracking-widest uppercase" href="/portfolio/">Portfolio</a>
-                    <a className="font-semibold inline-block pl-5 py-2 hover:text-cyan-700 text-xs tracking-widest uppercase" href="/contact/">Contact Me</a>
+                    <Link className="font-semibold inline-block px-5 py-2 text-cyan-700 text-xs tracking-widest uppercase" to="/">Home</Link>
+                    <Link className="font-semibold inline-block px-5 py-2 hover:text-cyan-700 text-xs tracking-widest uppercase" to="/portfolio/">Portfolio</Link>
+                    <Link className="font-semibold inline-block pl-5 py-2 hover:text-cyan-700 text-xs tracking-widest uppercase" to="/contact/">Contact Me</Link>
                 </nav>
             </div>
         </header>
@@ -33,13 +33,13 @@ const Layout = ({ children }) => {
 
                     <ul>
                         <li className="inline-block">
-                            <a className="font-semibold pr-10 text-white text-xs tracking-widest uppercase" href="/">Home</a>
+                            <Link className="font-semibold pr-10 text-white text-xs tracking-widest uppercase" to="/">Home</Link>
                         </li>
                         <li className="inline-block">
-                            <a className="font-semibold pr-10 text-white text-xs tracking-widest uppercase" href="/portfolio/">Portfolio</a>
+                            <Link className="font-semibold pr-10 text-white text-xs tracking-widest uppercase" to="/portfolio/">Portfolio</Link>
                         </li>
                         <li className="inline-block">
-                            <a className="font-semibold text-white text-xs tracking-widest uppercase" href="/contact/">Contact Me</a>
+                            <Link className="font-semibold text-white text-xs tracking-widest uppercase" to="/contact/">Contact Me</Link>
                         </li>
                     </ul>
                 </div>
