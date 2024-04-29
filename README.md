@@ -12,7 +12,6 @@ A simple static website based on Frontend Mentor's [Minimalist portfolio website
   - [What I learned](#what-i-learned)
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
-- [Author](#author)
 - [Photo credits](#photo-credits)
 
 ## Overview
@@ -66,13 +65,8 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 ### Useful resources
 
-- [Website name](https://example.com/) - Lorem ipsum dolor sit amet
-- [Website name](https://example.com/) - Ut enim ad minim veniam
-
-## Author
-
-- Website - [Nate Dev](https://nate-dev.com)
-- Frontend Mentor - [@ntjnh](https://www.frontendmentor.io/profile/ntjnh)
+- [Getting Started tutorial](https://www.gatsbyjs.com/docs/tutorial/getting-started/) - Gatsby's own tutorial was a useful reference
+- [Table of Components](https://mdxjs.com/table-of-components/) - MDX list of components; another useful reference
 
 ## Photo credits
 
