@@ -31,7 +31,7 @@ const IndexPage = () => {
                 <article className="w-1/2">
                     <div className="border-y border-slate-300 max-w-[350px] mx-auto pb-10 pt-12">
                         <h2 className="mb-7 text-4xl">About Me</h2>
-                        <p className="leading-[30px] mb-8">I'm a junior front-end developer looking for a new role in an exciting company. I focus on writing accessible HTML, using modern CSS practices and writing clean JavaScript. When writing JavaScript code, I mostly use React, but I can adapt to whatever tools are required. I'm based in London, UK, but I'm happy working remotely and have experience in remote teams. When I'm not coding, you'll find me outdoors. I love being out in nature whether that's going for a walk, run or cycling. I'd love you to check out my work.</p>
+                        <p className="leading-[30px] mb-8">Diam quam nulla porttitor massa id neque aliquam vestibulum morbi. Sapien eget proin sed. Morbi tincidunt ornare massa eget eges tas purus. Faucibus interdum posuere lorem ipsum dolor sit amet. Dictum at tempor comm odo a lacus. Risus commodo viverra maec enas accum san lacus vel facilisis. Aliquet nibh praesent tris tique magna sit amet purus. Mattis velit sed ullam corper morbi tincidunt ornare massa eget. Fusce ut placerat orci nulla digni ssim enim. Risus nec feugiat in fer men tum posuere urna nec tinc idunt praesent.</p>
 
                         <Link className="border border-black inline-block leading-none px-3 py-4 font-semibold text-xs tracking-widest uppercase" to="/portfolio/">Go to Portfolio</Link>
                     </div>
