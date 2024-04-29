@@ -1,9 +1,9 @@
 import React from 'react'
+import { Link } from 'gatsby'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub, faLinkedin, faTwitter } from '@fortawesome/free-brands-svg-icons'
 import logo from '../images/logo-ipsum.svg'
 import logoWhite from '../images/logo-ipsum-white.svg'
-import { Link } from 'gatsby'
 
 const Layout = ({ children }) => {
   return (

@@ -58,7 +58,10 @@ const Contact = () => {
                         </div>
 
                         <div>
-                            <input className="bg-black hover:bg-transparent border border-black cursor-pointer inline-block leading-none px-6 py-4 font-semibold text-white hover:text-black text-xs tracking-widest uppercase" type="submit" name="" id="" />
+                            <button className="relative bg-neutral-800 h-12 font-semibold inline-block pl-12 text-white text-xs tracking-widest uppercase w-[200px]" type="submit">
+                                <span className="absolute bg-black bottom-0 h-full left-0 w-12"></span>
+                                Send Message
+                            </button>
                         </div>
                     </form>
                 </div>
