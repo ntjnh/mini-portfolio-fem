@@ -7,7 +7,7 @@ import logoWhite from '../images/logo-ipsum-white.svg'
 
 const Layout = ({ children }) => {
   return (
-    <div className="bg-neutral-50">
+    <div className="bg-slate-50">
         <header>
             <div className="container flex items-center justify-between mx-auto py-12">
                 <Link to="/">
@@ -26,7 +26,7 @@ const Layout = ({ children }) => {
             {children}
         </main>
 
-        <footer className="bg-black py-6">
+        <footer className="bg-slate-950 py-6">
             <div className="container flex items-center justify-between mx-auto">
                 <div className="flex items-center">
                     <img className="h-[28px] inline-block mr-8" src={logoWhite} alt="Logo" />

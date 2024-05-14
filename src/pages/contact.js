@@ -17,17 +17,17 @@ const Contact = () => {
 
                     <ul>
                         <li className="inline-block">
-                            <a className="font-medium leading-none text-black hover:text-cyan-700 text-2xl tracking-widest uppercase" href="https://github.com/ntjnh" target="_blank" rel="noreferrer">
+                            <a className="font-medium leading-none text-slate-950 hover:text-cyan-700 text-2xl tracking-widest uppercase" href="https://github.com/ntjnh" target="_blank" rel="noreferrer">
                                 <FontAwesomeIcon icon={faGithub} />
                             </a>
                         </li>
                         <li className="inline-block">
-                            <a className="font-medium leading-none pl-4 text-black hover:text-cyan-700 text-2xl tracking-widest uppercase" href="https://twitter.com" target="_blank" rel="noreferrer">
+                            <a className="font-medium leading-none pl-4 text-slate-950 hover:text-cyan-700 text-2xl tracking-widest uppercase" href="https://twitter.com" target="_blank" rel="noreferrer">
                                 <FontAwesomeIcon icon={faTwitter} />
                             </a>
                         </li>
                         <li className="inline-block">
-                            <a className="font-medium leading-none pl-4 text-black hover:text-cyan-700 text-2xl tracking-widest uppercase" href="https://linkedin.com" target="_blank" rel="noreferrer">
+                            <a className="font-medium leading-none pl-4 text-slate-950 hover:text-cyan-700 text-2xl tracking-widest uppercase" href="https://linkedin.com" target="_blank" rel="noreferrer">
                                 <FontAwesomeIcon icon={faLinkedin} />
                             </a>
                         </li>
@@ -44,22 +44,22 @@ const Contact = () => {
                     <form>
                         <div className="mb-7">
                             <label className="font-bold inline-block mb-4 text-sm" htmlFor="name">Name</label>
-                            <input className="block bg-neutral-200 p-3 placeholder:text-neutral-400 w-full" type="text" name="name" id="name" placeholder="Jane Appleseed" />
+                            <input className="block bg-slate-200 p-3 placeholder:text-slate-400 w-full" type="text" name="name" id="name" placeholder="Jane Appleseed" />
                         </div>
 
                         <div className="mb-7">
                             <label className="font-bold inline-block mb-4 text-sm" htmlFor="email">Email Address</label>
-                            <input className="block bg-neutral-200 p-3 placeholder:text-neutral-400 w-full" type="text" name="email" id="email" placeholder="email@example.com" />
+                            <input className="block bg-slate-200 p-3 placeholder:text-slate-400 w-full" type="text" name="email" id="email" placeholder="email@example.com" />
                         </div>
 
                         <div className="mb-6">
                             <label className="font-bold inline-block mb-4 text-sm" htmlFor="message">Message</label>
-                            <textarea className="block bg-neutral-200 p-3 placeholder:text-neutral-400 w-full" name="message" id="message" placeholder="How can I help?" cols="30" rows="10"></textarea>
+                            <textarea className="block bg-slate-200 p-3 placeholder:text-slate-400 w-full" name="message" id="message" placeholder="How can I help?" cols="30" rows="10"></textarea>
                         </div>
 
                         <div>
-                            <button className="relative bg-neutral-800 h-12 font-semibold inline-block pl-12 text-white text-xs tracking-widest uppercase w-[200px]" type="submit">
-                                <span className="absolute bg-black bottom-0 h-full left-0 w-12"></span>
+                            <button className="relative bg-slate-800 h-12 font-semibold inline-block pl-12 text-white text-xs tracking-widest uppercase w-[200px]" type="submit">
+                                <span className="absolute bg-slate-950 bottom-0 h-full left-0 w-12"></span>
                                 Send Message
                             </button>
                         </div>

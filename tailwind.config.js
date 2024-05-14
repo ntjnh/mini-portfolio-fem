@@ -16,7 +16,11 @@ module.exports = {
       'xl': '986px',
       '2xl': '1110px'
     },
-    extend: {},
+    extend: {
+      fontSize: {
+        '4.5xl': ['2.5rem', '2.5rem']
+      }
+    },
   },
   plugins: [],
 }
