@@ -14,10 +14,9 @@ const Project = ({ data, children }) => {
     return (
         <Layout>
             <article className="pb-16">
-                {/* hero image */}
                 <GatsbyImage image={images.hero} alt={`${data.mdx.frontmatter.title} project image`} />
 
-                <div className="flex flex-wrap justify-between pt-24">
+                <div className="flex flex-wrap justify-between pt-28">
                     <div className="w-full lg:w-1/3">
                         <div className="border-b border-t border-slate-200 pr-2 py-12 lg:w-[95%]">
                             <h1 className="mb-8 text-4.5xl text-slate-700">{data.mdx.frontmatter.title}</h1>
@@ -31,32 +30,50 @@ const Project = ({ data, children }) => {
                     </div>
 
                     <div className="w-full lg:w-7/12">
-                        <h2>Project Background</h2>
-                        {children}
+                        <h2 className="font-normal mb-6 text-3xl text-slate-700">Project Background</h2>
+                        <div className="font-medium leading-8 mb-12 text-slate-600 text-sm">
+                            {children}
+                        </div>
 
-                        <h2>Static Previews</h2>
+                        <h2 className="font-normal mb-10 text-3xl text-slate-700">Static Previews</h2>
 
-                        <GatsbyImage image={images.preview_1} alt={`${data.mdx.frontmatter.title} desktop preview`} />
-                        <GatsbyImage image={images.preview_2} alt={`${data.mdx.frontmatter.title} mobile preview`} />
+                        <GatsbyImage className="mb-7" image={images.preview_1} alt={`${data.mdx.frontmatter.title} desktop preview`} />
+                        <GatsbyImage className="" image={images.preview_2} alt={`${data.mdx.frontmatter.title} mobile preview`} />
                     </div>
                 </div>
 
             </article>
 
-            <div className="flex flex-wrap justify-between">
-                <div className="w-1/2">
+            <div className="border-b border-t border-slate-300 flex flex-wrap justify-between">
+                <div className="border-r border-slate-300 pl-10 py-8 w-1/2">
                     <Link to="/">
                         {/*  */}
-                        <span>Previous Project</span>
+                        <h3 className="font-normal leading-none mb-2 text-3xl text-slate-700">Fylo</h3>
+                        <span className="text-slate-400">Previous Project</span>
                     </Link>
                 </div>
-                <div className="text-right w-1/2">
+                <div className="pr-10 py-8 text-right w-1/2">
                     <Link to="/">
                         {/*  */}
-                        <span>Next Project</span>
+                        <h3 className="font-normal leading-none mb-2 text-3xl text-slate-700">Bookmark</h3>
+                        <span className="text-slate-400">Next Project</span>
                     </Link>
                 </div>
             </div>
+
+            <section className="pt-20 pb-36">
+                <div className="flex items-center justify-between">
+                    <div className="w-[30%]">
+                        <h2 className="leading-[2.75rem] text-4xl">Interested in doing a project together?</h2>
+                    </div>
+
+                    <hr className="bg-slate-300 block h-px w-1/2" />
+
+                    <div className="text-right w-[14%]">
+                        <Link className="border border-slate-950 inline-block leading-none px-8 py-4 font-semibold text-xs tracking-widest uppercase" to="/contact/">Contact Me</Link>
+                    </div>
+                </div>
+            </section>
         </Layout>
     )
 }
