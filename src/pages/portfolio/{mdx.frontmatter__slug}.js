@@ -1,6 +1,8 @@
 import React from 'react'
 import { Link, graphql } from 'gatsby'
 import { GatsbyImage, getImage } from 'gatsby-plugin-image'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons'
 import Layout from '../../components/layout'
 import Seo from '../../components/seo'
 
@@ -45,35 +47,21 @@ const Project = ({ data, children }) => {
             </article>
 
             <div className="border-b border-t border-slate-300 flex flex-wrap justify-between">
-                <div className="border-r border-slate-300 pl-10 py-8 w-1/2">
-                    <Link to="/">
-                        {/*  */}
-                        <h3 className="font-normal leading-none mb-2 text-3xl text-slate-700">Fylo</h3>
+                <div className="border-r border-slate-300 pl-10 py-8 relative w-1/2">
+                    <Link className="" to={`/portfolio/${data.mdx.frontmatter.prev_proj.toLowerCase()}`}>
+                        <FontAwesomeIcon className="absolute left-0 top-[53px] text-xl text-slate-600" icon={faChevronLeft} />
+                        <h3 className="font-normal leading-none mb-2 text-3xl text-slate-700">{data.mdx.frontmatter.prev_proj}</h3>
                         <span className="text-slate-400">Previous Project</span>
                     </Link>
                 </div>
-                <div className="pr-10 py-8 text-right w-1/2">
-                    <Link to="/">
-                        {/*  */}
-                        <h3 className="font-normal leading-none mb-2 text-3xl text-slate-700">Bookmark</h3>
+                <div className="pr-10 py-8 relative text-right w-1/2">
+                    <Link className="" to={`/portfolio/${data.mdx.frontmatter.next_proj.toLowerCase()}`}>
+                        <h3 className="font-normal leading-none mb-2 text-3xl text-slate-700">{data.mdx.frontmatter.next_proj}</h3>
                         <span className="text-slate-400">Next Project</span>
+                        <FontAwesomeIcon className="absolute right-0 top-[53px] text-xl text-slate-600" icon={faChevronRight} />
                     </Link>
                 </div>
             </div>
-
-            <section className="pt-20 pb-36">
-                <div className="flex items-center justify-between">
-                    <div className="w-[30%]">
-                        <h2 className="leading-[2.75rem] text-4xl">Interested in doing a project together?</h2>
-                    </div>
-
-                    <hr className="bg-slate-300 block h-px w-1/2" />
-
-                    <div className="text-right w-[14%]">
-                        <Link className="border border-slate-950 inline-block leading-none px-8 py-4 font-semibold text-xs tracking-widest uppercase" to="/contact/">Contact Me</Link>
-                    </div>
-                </div>
-            </section>
         </Layout>
     )
 }
@@ -103,6 +91,8 @@ export const query = graphql`
                         gatsbyImageData
                     }
                 }
+                prev_proj
+                next_proj
             }
         }
     }
