@@ -32,20 +32,6 @@ const Portfolio = ({ data }) => {
                     })
                 }
             </section>
-
-            <section className="pt-20 pb-36">
-                <div className="flex items-center justify-between">
-                    <div className="w-[30%]">
-                        <h2 className="leading-[2.75rem] text-4xl">Interested in doing a project together?</h2>
-                    </div>
-
-                    <hr className="bg-slate-300 block h-px w-1/2" />
-
-                    <div className="text-right w-[14%]">
-                        <Link className="border border-slate-950 inline-block leading-none px-8 py-4 font-semibold text-xs tracking-widest uppercase" to="/contact/">Contact Me</Link>
-                    </div>
-                </div>
-            </section>
         </Layout>
     )
 }
