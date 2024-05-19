@@ -23,7 +23,7 @@ const Portfolio = ({ data }) => {
                                         <div>
                                             <h2 className="mb-10 text-4.5xl text-slate-700">{node.frontmatter.title}</h2>
                                             <p className="font-medium leading-8 mb-6 text-slate-600 text-sm">{node.frontmatter.description}</p>
-                                            <Link className="border border-slate-700 font-bold inline-block leading-none px-6 py-4 text-slate-700 text-xs tracking-widest uppercase" to={`/portfolio/${node.frontmatter.slug}`}>View Project</Link>
+                                            <Link className="hover:bg-slate-700 border border-slate-700 font-bold inline-block leading-none px-6 py-4 text-slate-700 hover:text-slate-50 text-xs tracking-widest uppercase" to={`/portfolio/${node.frontmatter.slug}`}>View Project</Link>
                                         </div>
                                     </div>
                                 </div>

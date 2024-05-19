@@ -27,7 +27,7 @@ const Project = ({ data, children }) => {
                             <p className="font-bold mb-4 text-cyan-700 text-sm">{data.mdx.frontmatter.type}</p>
                             <p className="font-bold text-cyan-700 text-sm">{data.mdx.frontmatter.stack}</p>
 
-                            <a className="border border-slate-700 font-bold inline-block mt-9 px-7 py-4 text-xs tracking-widest uppercase" href="/" target="_blank">Visit Website</a>
+                            <a className="hover:bg-slate-700 border border-slate-700 font-bold inline-block mt-9 px-7 py-4 text-slate-700 hover:text-slate-50 text-xs tracking-widest uppercase" href="/" target="_blank">Visit Website</a>
                         </div>
                     </div>
 

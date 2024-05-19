@@ -13,6 +13,12 @@
     }
 }
 
+@media (max-width: 1023px) {
+    .home-hero {
+        background-image: none !important;
+    }
+}
+
 .project-item:nth-child(odd) .text-col .text-col-inner {
     margin-left: auto;
 }
