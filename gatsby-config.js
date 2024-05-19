@@ -4,7 +4,7 @@
 module.exports = {
   siteMetadata: {
     title: `mini-portfolio-fem`,
-    siteUrl: `https://www.yourdomain.tld`,
+    siteUrl: `https://master.dw0h5zausfmzd.amplifyapp.com/`,
   },
   plugins: [
     'gatsby-plugin-postcss',
