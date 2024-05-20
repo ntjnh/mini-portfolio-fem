@@ -1,19 +1,20 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub, faLinkedin, faTwitter } from '@fortawesome/free-brands-svg-icons'
+import { faAnglesDown } from '@fortawesome/free-solid-svg-icons'
 import Layout from '../components/layout'
 import Seo from '../components/seo'
 
 const Contact = () => {
     return (
-        <Layout>
-            <div className="border-t border-slate-300 flex mt-14 py-14">
-                <div className="w-1/3">
-                    <h1 className="text-4xl">Get In Touch</h1>
+        <Layout isContact={true}>
+            <div className="border-t border-slate-300 flex flex-wrap lg:flex-nowrap mx-8 lg:mx-0 lg:mt-14 pb-9 pt-6 lg:py-14">
+                <div className="w-full lg:w-1/3">
+                    <h1 className="mb-7 lg:mb-0 text-4xl">Get In Touch</h1>
                 </div>
 
-                <div className="w-2/3">
-                    <p className="mb-8">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat eaque molestias quis esse voluptatibus. Suscipit asperiores repellendus officia distinctio nam, excepturi sunt quibusdam itaque exercitationem omnis iste earum debitis eius.</p>
+                <div className="w-full lg:w-2/3">
+                    <p className="font-medium leading-7 mb-8 text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mi ipsum faucibus vitae aliquet nec ullamcorper sit. Tortor vitae purus faucibus ornare. Consequat semper viverra nam libero justo laoreet sit amet. Sit amet porttitor eget dolor morbi non arcu risus quis. Mattis pellentesque id nibh tortor. Phasellus faucibus scelerisque eleifend donec pretium. Bibendum neque egestas congue quisque. Senectus et netus et malesuada fames ac turpis egestas integer.</p>
 
                     <ul>
                         <li className="inline-block">
@@ -35,31 +36,33 @@ const Contact = () => {
                 </div>
             </div>
 
-            <div className="border-t border-slate-300 flex mt-14 py-14">
-                <div className="w-1/3">
+            <div className="border-t border-slate-300 flex flex-wrap lg:flex-nowrap lg:mt-14 mx-8 lg:mx-0 pb-16 pt-9 lg:py-14">
+                <div className="mb-5 w-full lg:w-1/3">
                     <h1 className="text-4xl">Contact Me</h1>
                 </div>
 
-                <div className="w-2/3">
+                <div className="w-full lg:w-2/3">
                     <form>
                         <div className="mb-7">
                             <label className="font-bold inline-block mb-4 text-sm" htmlFor="name">Name</label>
-                            <input className="block bg-slate-200 p-3 placeholder:text-slate-400 w-full" type="text" name="name" id="name" placeholder="Jane Appleseed" />
+                            <input className="block bg-slate-200 p-3 placeholder:font-semibold placeholder:text-slate-400 placeholder:text-xs w-full" type="text" name="name" id="name" placeholder="Jane Appleseed" />
                         </div>
 
                         <div className="mb-7">
                             <label className="font-bold inline-block mb-4 text-sm" htmlFor="email">Email Address</label>
-                            <input className="block bg-slate-200 p-3 placeholder:text-slate-400 w-full" type="text" name="email" id="email" placeholder="email@example.com" />
+                            <input className="block bg-slate-200 p-3 placeholder:font-semibold placeholder:text-slate-400 placeholder:text-xs w-full" type="text" name="email" id="email" placeholder="email@example.com" />
                         </div>
 
                         <div className="mb-6">
                             <label className="font-bold inline-block mb-4 text-sm" htmlFor="message">Message</label>
-                            <textarea className="block bg-slate-200 p-3 placeholder:text-slate-400 w-full" name="message" id="message" placeholder="How can I help?" cols="30" rows="10"></textarea>
+                            <textarea className="block bg-slate-200 h-28 lg:h-64 p-3 placeholder:font-semibold placeholder:text-slate-400 placeholder:text-xs w-full" name="message" id="message" placeholder="How can I help?" cols="30"></textarea>
                         </div>
 
                         <div>
                             <button className="relative bg-slate-800 h-12 font-semibold inline-block pl-12 text-white text-xs tracking-widest uppercase w-[200px]" type="submit">
-                                <span className="absolute bg-slate-950 bottom-0 h-full left-0 w-12"></span>
+                                <span className="absolute bg-slate-950 bottom-0 flex h-full items-center justify-center left-0 w-12">
+                                    <FontAwesomeIcon className="text-slate-300 text-lg" icon={faAnglesDown} />
+                                </span>
                                 Send Message
                             </button>
                         </div>
