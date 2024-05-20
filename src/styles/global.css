@@ -17,6 +17,10 @@
     .home-hero {
         background-image: none !important;
     }
+
+    .project-item:last-child {
+        margin-bottom: 0;
+    }
 }
 
 .project-item:nth-child(odd) .text-col .text-col-inner {
@@ -24,9 +28,19 @@
 }
 
 .project-item:nth-child(even) .text-col {
-    order: 1;
+    order: 2;
 }
 
 .project-item:nth-child(even) .image-col {
-    order: 2;
+    order: 1;
+}
+
+@media (min-width: 1024px) {
+    .project-item:nth-child(even) .text-col {
+        order: 1;
+    }
+
+    .project-item:nth-child(even) .image-col {
+        order: 2;
+    }
 }

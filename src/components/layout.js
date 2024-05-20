@@ -8,7 +8,7 @@ import logoWhite from '../images/logo-ipsum-white.svg'
 const Layout = ({ children, isContact }) => {
 
     const cta = (
-        <section className="px-8 lg:px-0 py-24 lg:pt-20 lg:pb-36">
+        <section className="px-8 lg:px-0 py-20 lg:pt-20 lg:pb-36">
             <div className="flex flex-wrap lg:flex-nowrap items-center justify-center lg:justify-between">
                 <div className="mb-8 lg:w-[30%]">
                     <h2 className="leading-[2.75rem] text-4xl text-center lg:text-left">Interested in doing a project together?</h2>
