@@ -1,11 +1,18 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link } from 'gatsby'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub, faLinkedin, faTwitter } from '@fortawesome/free-brands-svg-icons'
+import { faBars, faXmark } from '@fortawesome/free-solid-svg-icons'
 import logo from '../images/logo-ipsum.svg'
 import logoWhite from '../images/logo-ipsum-white.svg'
 
 const Layout = ({ children, isContact }) => {
+    const [ menuVisible, setMenuVisible ] = useState(false)
+    const menuToggleClass = menuVisible ? 'block' : 'hidden'
+
+    function handleClick() {
+        setMenuVisible(prev => !prev)
+    }
 
     const cta = (
         <section className="px-8 lg:px-0 py-20 lg:pt-20 lg:pb-36">
@@ -25,16 +32,20 @@ const Layout = ({ children, isContact }) => {
 
     return (
         <div className="bg-slate-50">
-            <header className="p-8">
-                <div className="container flex items-center justify-between mx-auto lg:py-12">
+            <header className="p-8 lg:p-0">
+                <div className="container flex flex-wrap lg:flex-nowrap items-center justify-between mx-auto lg:py-12">
                     <Link to="/">
                         <img className="h-[34px]" src={logo} alt="Logo" />
                     </Link>
 
-                    <nav className="hidden lg:block">
-                        <Link activeClassName="text-cyan-700" className="font-semibold inline-block px-5 py-2 hover:text-cyan-700 text-xs tracking-widest uppercase" to="/">Home</Link>
-                        <Link activeClassName="text-cyan-700" className="font-semibold inline-block px-5 py-2 hover:text-cyan-700 text-xs tracking-widest uppercase" to="/portfolio/">Portfolio</Link>
-                        <Link activeClassName="text-cyan-700" className="font-semibold inline-block pl-5 py-2 hover:text-cyan-700 text-xs tracking-widest uppercase" to="/contact/">Contact Me</Link>
+                    <button className="font-light lg:hidden leading-none text-slate-700 text-3xl" onClick={handleClick}>
+                        <FontAwesomeIcon icon={menuVisible ? faXmark : faBars} />
+                    </button>
+
+                    <nav className={`${menuToggleClass} lg:block bg-slate-800 lg:bg-transparent relative lg:static text-center lg:text-left top-6 w-full lg:w-auto`}>
+                        <Link activeClassName="bg-cyan-700 lg:bg-transparent lg:text-cyan-700" className="hover:bg-cyan-800 font-semibold block lg:inline-block lg:px-5 py-4 text-slate-50 lg:text-slate-800 lg:hover:text-cyan-700 text-xs tracking-widest uppercase" to="/">Home</Link>
+                        <Link activeClassName="bg-cyan-700 lg:bg-transparent lg:text-cyan-700" className="hover:bg-cyan-800 border-y border-slate-50 lg:border-none font-semibold block lg:inline-block lg:px-5 py-4 text-slate-50 lg:text-slate-800 lg:hover:text-cyan-700 text-xs tracking-widest uppercase" to="/portfolio/">Portfolio</Link>
+                        <Link activeClassName="bg-cyan-700 lg:bg-transparent lg:text-cyan-700" className="hover:bg-cyan-800 font-semibold block lg:inline-block lg:pl-5 py-4 text-slate-50 lg:text-slate-800 lg:hover:text-cyan-700 text-xs tracking-widest uppercase" to="/contact/">Contact Me</Link>
                     </nav>
                 </div>
             </header>
