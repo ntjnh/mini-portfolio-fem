@@ -23,6 +23,9 @@ module.exports = {
       lineHeight: {
         '11': '2.75rem',
         '12': '3rem'
+      },
+      padding: {
+        '18': '4.5rem'
       }
     },
   },
