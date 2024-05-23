@@ -56,19 +56,19 @@ const Layout = ({ children, isContact }) => {
                 {!isContact && cta}
             </main>
 
-            <footer className="bg-slate-950 px-8 lg:px-0 py-14 lg:py-6">
-                <div className="container flex flex-wrap lg:flex-nowrap items-center justify-center lg:justify-between mx-auto">
-                    <div className="flex flex-wrap lg:flex-nowrap items-center justify-center lg:justify-normal w-full lg:w-auto">
-                        <img className="h-[28px] inline-block mb-4 lg:mb-0 lg:mr-12" src={logoWhite} alt="Logo" />
+            <footer className="bg-slate-950 px-8 md:px-0 py-14 md:py-4 lg:py-6">
+                <div className="container flex flex-wrap md:flex-nowrap items-center justify-center md:justify-between mx-auto">
+                    <div className="flex flex-wrap md:flex-nowrap items-center justify-center md:justify-normal w-full md:w-auto">
+                        <img className="h-[28px] inline-block mb-4 md:mb-0 md:mr-12" src={logoWhite} alt="Logo" />
 
-                        <ul className="mb-4 lg:mb-0 w-full lg:w-auto">
-                            <li className="block lg:inline-block text-center lg:text-left">
-                                <Link className="font-semibold inline-block py-4 lg:pr-10 text-slate-50 hover:text-cyan-600 text-xs tracking-widest uppercase" to="/">Home</Link>
+                        <ul className="mb-4 md:mb-0 w-full md:w-auto">
+                            <li className="block md:inline-block text-center md:text-left">
+                                <Link className="font-semibold inline-block py-4 md:pr-10 text-slate-50 hover:text-cyan-600 text-xs tracking-widest uppercase" to="/">Home</Link>
                             </li>
-                            <li className="block lg:inline-block text-center lg:text-left">
-                                <Link className="font-semibold inline-block py-4 lg:pr-10 text-slate-50 hover:text-cyan-600 text-xs tracking-widest uppercase" to="/portfolio/">Portfolio</Link>
+                            <li className="block md:inline-block text-center md:text-left">
+                                <Link className="font-semibold inline-block py-4 md:pr-10 text-slate-50 hover:text-cyan-600 text-xs tracking-widest uppercase" to="/portfolio/">Portfolio</Link>
                             </li>
-                            <li className="block lg:inline-block text-center lg:text-left">
+                            <li className="block md:inline-block text-center md:text-left">
                                 <Link className="font-semibold inline-block py-4 text-slate-50 hover:text-cyan-600 text-xs tracking-widest uppercase" to="/contact/">Contact Me</Link>
                             </li>
                         </ul>
