@@ -8,7 +8,7 @@ import Seo from '../components/seo'
 const Contact = () => {
     return (
         <Layout isContact={true}>
-            <div className="border-t border-slate-300 flex flex-wrap lg:flex-nowrap mx-8 lg:mx-0 lg:mt-14 pb-9 pt-6 lg:py-14">
+            <div className="border-t border-slate-300 flex flex-wrap lg:flex-nowrap mx-8 lg:mx-0 md:mt-14 pb-9 pt-6 lg:py-14">
                 <div className="w-full lg:w-1/3">
                     <h1 className="mb-7 lg:mb-0 text-4xl">Get In Touch</h1>
                 </div>
