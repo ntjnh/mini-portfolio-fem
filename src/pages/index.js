@@ -35,7 +35,7 @@ const IndexPage = () => {
                 </div>
 
                 <article className="md:w-3/5 lg:w-1/2" id="about">
-                    <div className="border-y border-slate-300 max-w-[350px] md:ml-auto lg:mx-auto pb-12 md:pb-10 pt-9 md:pt-12">
+                    <div className="border-y border-slate-300 md:h-full lg:h-auto max-w-[350px] md:ml-auto lg:mx-auto pb-12 md:pb-10 pt-9 md:pt-12">
                         <h2 className="mb-7 text-4xl">About Me</h2>
                         <p className="font-medium leading-[30px] mb-8 text-sm">Diam quam nulla porttitor massa id neque aliquam vestibulum morbi. Sapien eget proin sed. Morbi tincidunt ornare massa eget eges tas purus. Faucibus interdum posuere lorem ipsum dolor sit amet. Dictum at tempor comm odo a lacus. Risus commodo viverra maec enas accum san lacus vel facilisis. Aliquet nibh praesent tris tique magna sit amet purus. Mattis velit sed ullam corper morbi tincidunt ornare massa eget. Fusce ut placerat orci nulla digni ssim enim. Risus nec feugiat in fer men tum posuere urna nec tinc idunt praesent.</p>
 
