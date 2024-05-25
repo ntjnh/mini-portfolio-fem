@@ -1,6 +1,5 @@
 import React from 'react'
 import { Link, graphql } from 'gatsby'
-import { GatsbyImage, getImage } from 'gatsby-plugin-image'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons'
 import Layout from '../../components/layout'
@@ -8,15 +7,15 @@ import Seo from '../../components/seo'
 
 const Project = ({ data, children }) => {
     const images = {
-        hero: getImage(data.mdx.frontmatter.image_hero),
-        preview_1: getImage(data.mdx.frontmatter.image_preview_1),
-        preview_2: getImage(data.mdx.frontmatter.image_preview_2)
+        hero: data.mdx.frontmatter.image_hero.publicURL,
+        preview_1: data.mdx.frontmatter.image_preview_1.publicURL,
+        preview_2: data.mdx.frontmatter.image_preview_2.publicURL
     }
 
     return (
         <Layout>
             <article className="mt-4 md:mt-16 lg:mt-6 pb-16 md:pb-20 lg:pb-16 px-8 md:px-0">
-                <GatsbyImage image={images.hero} alt={`${data.mdx.frontmatter.title} project image`} />
+                <img src={images.hero} alt={`${data.mdx.frontmatter.title} project`} />
 
                 <div className="flex flex-wrap justify-between pt-10 lg:pt-28">
                     <div className="w-full lg:w-1/3">
@@ -39,8 +38,8 @@ const Project = ({ data, children }) => {
 
                         <h2 className="font-normal mb-7 lg:mb-10 text-3xl text-slate-700">Static Previews</h2>
 
-                        <GatsbyImage className="mb-7" image={images.preview_1} alt={`${data.mdx.frontmatter.title} desktop preview`} />
-                        <GatsbyImage className="" image={images.preview_2} alt={`${data.mdx.frontmatter.title} mobile preview`} />
+                        <img className="mb-7" src={images.preview_1} alt={`${data.mdx.frontmatter.title} desktop preview`} />
+                        <img src={images.preview_2} alt={`${data.mdx.frontmatter.title} mobile preview`} />
                     </div>
                 </div>
 
@@ -49,7 +48,7 @@ const Project = ({ data, children }) => {
             <div className="px-8 md:px-0">
                 <div className="border-b border-t border-slate-300 flex flex-wrap justify-between py-6 md:py-0">
                     <div className="border-r border-slate-300 md:pl-10 pt-6 pb-2 md:py-8 relative w-1/2">
-                        <Link className="" to={`/portfolio/${data.mdx.frontmatter.prev_proj.toLowerCase()}`}>
+                        <Link to={`/portfolio/${data.mdx.frontmatter.prev_proj.toLowerCase()}`}>
                             <FontAwesomeIcon className="relative md:absolute left-0 -top-5 md:top-[53px] text-xl text-slate-600" icon={faChevronLeft} />
                             <h3 className="font-normal leading-none mb-2 text-[1.75rem] md:text-3xl text-slate-700">{data.mdx.frontmatter.prev_proj}</h3>
                             <span className="text-slate-400">Previous Project</span>
@@ -57,7 +56,7 @@ const Project = ({ data, children }) => {
                     </div>
 
                     <div className="md:pr-10 pt-6 pb-2 md:py-8 relative text-right w-1/2">
-                        <Link className="" to={`/portfolio/${data.mdx.frontmatter.next_proj.toLowerCase()}`}>
+                        <Link to={`/portfolio/${data.mdx.frontmatter.next_proj.toLowerCase()}`}>
                             <FontAwesomeIcon className="relative md:absolute right-0 -top-5 md:top-[53px] text-xl text-slate-600" icon={faChevronRight} />
                             <h3 className="font-normal leading-none mb-2 text-[1.75rem] md:text-3xl text-slate-700">{data.mdx.frontmatter.next_proj}</h3>
                             <span className="text-slate-400">Next Project</span>
@@ -77,22 +76,16 @@ export const query = graphql`
                 title
                 description
                 image_hero {
-                    childImageSharp {
-                        gatsbyImageData
-                    }
+                    publicURL
                 }
                 type
                 stack
                 website
                 image_preview_1 {
-                    childImageSharp {
-                        gatsbyImageData
-                    }
+                    publicURL
                 }
                 image_preview_2 {
-                    childImageSharp {
-                        gatsbyImageData
-                    }
+                    publicURL
                 }
                 prev_proj
                 next_proj

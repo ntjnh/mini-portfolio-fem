@@ -1,6 +1,5 @@
 import React from 'react'
 import { Link, graphql } from 'gatsby'
-import { GatsbyImage, getImage } from 'gatsby-plugin-image'
 import Layout from '../../components/layout'
 import Seo from '../../components/seo'
 
@@ -10,12 +9,12 @@ const Portfolio = ({ data }) => {
             <section className="px-8 md:px-0 pt-4 md:pt-0 lg:pt-12">
                 {
                     data.allMdx.nodes.map(node => {
-                        const thumb = getImage(node.frontmatter.thumbnail)
+                        const thumb = node.frontmatter.thumbnail.publicURL
 
                         return (
                             <article className="flex flex-wrap lg:flex-nowrap mb-16 md:mb-18 project-item md:justify-between md:items-center lg:items-stretch" key={node.id}>
                                 <div className="image-col mb-8 lg:mb-0 w-full md:w-1/2">
-                                    <GatsbyImage class="lg:w-[96%]" image={thumb} alt={`${node.frontmatter.title} thumbnail`} />
+                                    <img className="lg:w-[96%]" src={thumb} alt={`${node.frontmatter.title} thumbnail`} />
                                 </div>
 
                                 <div className="text-col w-full md:w-5/12 lg:w-1/2">
@@ -46,9 +45,7 @@ export const query = graphql`
                     slug
                     date(formatString: "MMMM D, YYYY")
                     thumbnail {
-                        childImageSharp {
-                            gatsbyImageData
-                        }
+                        publicURL
                     }
                 }
                 id
