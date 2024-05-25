@@ -15,19 +15,19 @@ const Project = ({ data, children }) => {
 
     return (
         <Layout>
-            <article className="mt-4 lg:mt-0 pb-16 px-8 lg:px-0">
+            <article className="mt-4 md:mt-16 lg:mt-6 pb-16 md:pb-20 lg:pb-16 px-8 md:px-0">
                 <GatsbyImage image={images.hero} alt={`${data.mdx.frontmatter.title} project image`} />
 
                 <div className="flex flex-wrap justify-between pt-10 lg:pt-28">
                     <div className="w-full lg:w-1/3">
-                        <div className="border-b border-t border-slate-200 pr-2 py-6 lg:py-12 lg:w-[95%]">
-                            <h1 className="mb-6 lg:mb-8 text-4.5xl text-slate-700">{data.mdx.frontmatter.title}</h1>
+                        <div className="border-b border-t border-slate-300 lg:pr-2 py-6 md:pb-8 md:pt-10 lg:py-12 md:relative lg:w-[95%]">
+                            <h1 className="mb-6 md:mb-5 lg:mb-8 text-4.5xl md:text-4xl lg:text-4.5xl text-slate-700">{data.mdx.frontmatter.title}</h1>
 
-                            <p className="font-medium leading-7 mb-8 text-slate-600 text-sm">{data.mdx.frontmatter.description}</p>
-                            <p className="font-bold mb-4 text-cyan-700 text-[13px] lg:text-sm">{data.mdx.frontmatter.type}</p>
+                            <p className="md:absolute lg:static font-medium leading-7 mb-8 md:mb-0 lg:mb-8 md:right-0 text-slate-600 text-sm md:text-[15px] lg:text-sm md:top-14 md:w-1/2 lg:w-full">{data.mdx.frontmatter.description}</p>
+                            <p className="font-bold mb-4 md:mb-2 lg:mb-4 text-cyan-700 text-[13px] lg:text-sm">{data.mdx.frontmatter.type}</p>
                             <p className="font-bold text-cyan-700 text-[13px] lg:text-sm">{data.mdx.frontmatter.stack}</p>
 
-                            <a className="hover:bg-slate-700 border border-slate-700 font-bold inline-block mt-9 px-7 py-4 text-slate-700 hover:text-slate-50 text-xs tracking-widest uppercase" href="/" target="_blank">Visit Website</a>
+                            <a className="hover:bg-slate-700 border border-slate-700 font-bold inline-block mt-9 md:mt-6 lg:mt-9 px-7 py-4 text-slate-700 hover:text-slate-50 text-xs tracking-widest uppercase" href="/" target="_blank">Visit Website</a>
                         </div>
                     </div>
 
@@ -46,20 +46,20 @@ const Project = ({ data, children }) => {
 
             </article>
 
-            <div className="px-8 lg:px-0">
-                <div className="border-b border-t border-slate-300 flex flex-wrap justify-between py-6 lg:py-0">
-                    <div className="border-r border-slate-300 lg:pl-10 pt-6 pb-2 lg:py-8 relative w-1/2">
+            <div className="px-8 md:px-0">
+                <div className="border-b border-t border-slate-300 flex flex-wrap justify-between py-6 md:py-0">
+                    <div className="border-r border-slate-300 md:pl-10 pt-6 pb-2 md:py-8 relative w-1/2">
                         <Link className="" to={`/portfolio/${data.mdx.frontmatter.prev_proj.toLowerCase()}`}>
-                            <FontAwesomeIcon className="relative lg:absolute left-0 -top-5 lg:top-[53px] text-xl text-slate-600" icon={faChevronLeft} />
-                            <h3 className="font-normal leading-none mb-2 text-[1.75rem] lg:text-3xl text-slate-700">{data.mdx.frontmatter.prev_proj}</h3>
+                            <FontAwesomeIcon className="relative md:absolute left-0 -top-5 md:top-[53px] text-xl text-slate-600" icon={faChevronLeft} />
+                            <h3 className="font-normal leading-none mb-2 text-[1.75rem] md:text-3xl text-slate-700">{data.mdx.frontmatter.prev_proj}</h3>
                             <span className="text-slate-400">Previous Project</span>
                         </Link>
                     </div>
 
-                    <div className="lg:pr-10 pt-6 pb-2 lg:py-8 relative text-right w-1/2">
+                    <div className="md:pr-10 pt-6 pb-2 md:py-8 relative text-right w-1/2">
                         <Link className="" to={`/portfolio/${data.mdx.frontmatter.next_proj.toLowerCase()}`}>
-                            <FontAwesomeIcon className="relative lg:absolute right-0 -top-5 lg:top-[53px] text-xl text-slate-600" icon={faChevronRight} />
-                            <h3 className="font-normal leading-none mb-2 text-[1.75rem] lg:text-3xl text-slate-700">{data.mdx.frontmatter.next_proj}</h3>
+                            <FontAwesomeIcon className="relative md:absolute right-0 -top-5 md:top-[53px] text-xl text-slate-600" icon={faChevronRight} />
+                            <h3 className="font-normal leading-none mb-2 text-[1.75rem] md:text-3xl text-slate-700">{data.mdx.frontmatter.next_proj}</h3>
                             <span className="text-slate-400">Next Project</span>
                         </Link>
                     </div>

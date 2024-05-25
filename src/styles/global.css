@@ -50,5 +50,6 @@
 
     .project-item:nth-child(even) .image-col {
         order: 2;
+        text-align: right;
     }
 }

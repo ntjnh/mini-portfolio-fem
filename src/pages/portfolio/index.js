@@ -13,7 +13,7 @@ const Portfolio = ({ data }) => {
                         const thumb = getImage(node.frontmatter.thumbnail)
 
                         return (
-                            <article className="flex flex-wrap lg:flex-nowrap mb-16 md:mb-18 project-item md:justify-between md:items-center lg:items-start" key={node.id}>
+                            <article className="flex flex-wrap lg:flex-nowrap mb-16 md:mb-18 project-item md:justify-between md:items-center lg:items-stretch" key={node.id}>
                                 <div className="image-col mb-8 lg:mb-0 w-full md:w-1/2">
                                     <GatsbyImage class="lg:w-[96%]" image={thumb} alt={`${node.frontmatter.title} thumbnail`} />
                                 </div>
