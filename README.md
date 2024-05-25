@@ -1,22 +1,16 @@
 # Minimalist Portfolio
-A simple static website based on Frontend Mentor's [Minimalist portfolio website challenge](https://www.frontendmentor.io/challenges/minimalist-portfolio-website-LMy-ZRyiE). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+A simple static website based on Frontend Mentor's [Minimalist portfolio website challenge](https://www.frontendmentor.io/challenges/minimalist-portfolio-website-LMy-ZRyiE).
 
 ## Table of contents
 
-- [Overview](#overview)
-  - [The brief](#the-brief)
-  - [Screenshot](#screenshot)
-  - [Links](#links)
+- [Brief](#brief)
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
-- [Photo credits](#photo-credits)
 
-## Overview
-
-### The brief
+## Brief
 
 Your challenge is to build out this multi-page portfolio website and get it looking as close to the design as possible. The download includes mobile, tablet & desktop designs for a Homepage, Portfolio index page, Portfolio detail pages, and a Contact page. A design system is also included to provide colors, fonts, etc.
 
@@ -35,8 +29,6 @@ Your users should be able to:
 
 
 ### Finished Project
-
-![Project screenshot](./screenshot.png)
 
 **Live URL:** [Minimalist Portfolio](https://master.dw0h5zausfmzd.amplifyapp.com/)
 
@@ -66,10 +58,5 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 ### Useful resources
 
 - [Getting Started tutorial](https://www.gatsbyjs.com/docs/tutorial/getting-started/) - Gatsby's own tutorial was a useful reference
+- [Gatsby Link API](https://www.gatsbyjs.com/docs/reference/built-in-components/gatsby-link/)
 - [Table of Components](https://mdxjs.com/table-of-components/) - MDX list of components; another useful reference
-
-## Photo credits
-
-- Home page - Hero
-    - **Source:** [Pexels](https://www.pexels.com/photo/macbook-pro-on-brown-wooden-table-2312369/)
-    - **Photographer:** [Andrew Neel](https://www.pexels.com/@andrew/)
