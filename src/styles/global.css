@@ -15,6 +15,10 @@
     h6 {
         @apply font-bold font-serif;
     }
+
+    nav.header-nav > .nav-current {
+        @apply bg-cyan-700 md:bg-slate-50 text-slate-50 md:text-cyan-700;
+    }
 }
 
 .project-item:nth-child(odd) .text-col .text-col-inner {

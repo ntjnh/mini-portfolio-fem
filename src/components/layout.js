@@ -15,7 +15,7 @@ const Layout = ({ children, isContact }) => {
     }
 
     const cta = (
-        <section className="px-8 md:px-0 py-20 lg:pt-20 lg:pb-36">
+        <section className="px-8 md:px-0 py-20 md:py-18 lg:py-20 lg:pt-20 lg:pb-36">
             <div className="flex flex-wrap md:flex-nowrap items-center justify-center md:justify-between">
                 <div className="mb-8 md:w-1/2 lg:w-[30%]">
                     <h2 className="leading-[2.75rem] text-4xl text-center md:text-left">Interested in doing a project together?</h2>
@@ -33,7 +33,7 @@ const Layout = ({ children, isContact }) => {
     return (
         <div className="bg-slate-50">
             <header className="p-8 md:px-0 md:py-12 lg:py-0">
-                <div className="container flex flex-wrap lg:flex-nowrap items-center justify-between mx-auto lg:py-12">
+                <div className="container flex flex-wrap lg:flex-nowrap items-center justify-between mx-auto lg:py-14">
                     <Link to="/">
                         <img className="h-[34px]" src={logo} alt="Logo" />
                     </Link>
@@ -42,10 +42,10 @@ const Layout = ({ children, isContact }) => {
                         <FontAwesomeIcon icon={menuVisible ? faXmark : faBars} />
                     </button>
 
-                    <nav className={`${menuToggleClass} md:block bg-slate-800 md:bg-transparent relative md:static text-center md:text-left top-6 w-full md:w-auto`}>
-                        <Link activeClassName="bg-cyan-700 md:bg-transparent md:text-cyan-700" className="hover:bg-cyan-800 md:hover:bg-transparent font-semibold block md:inline-block md:px-5 py-4 text-slate-50 md:text-slate-800 md:hover:text-cyan-700 text-xs tracking-widest uppercase" to="/">Home</Link>
-                        <Link activeClassName="bg-cyan-700 md:bg-transparent md:text-cyan-700" className="hover:bg-cyan-800 md:hover:bg-transparent border-y border-slate-50 md:border-none font-semibold block md:inline-block md:px-5 py-4 text-slate-50 md:text-slate-800 md:hover:text-cyan-700 text-xs tracking-widest uppercase" to="/portfolio/">Portfolio</Link>
-                        <Link activeClassName="bg-cyan-700 md:bg-transparent md:text-cyan-700" className="hover:bg-cyan-800 md:hover:bg-transparent font-semibold block md:inline-block md:pl-5 py-4 text-slate-50 md:text-slate-800 md:hover:text-cyan-700 text-xs tracking-widest uppercase" to="/contact/">Contact Me</Link>
+                    <nav className={`${menuToggleClass} header-nav md:block bg-slate-800 md:bg-transparent relative md:static text-center md:text-left top-6 w-full md:w-auto`}>
+                        <Link activeClassName="nav-current" className="hover:bg-cyan-800 md:hover:bg-transparent font-semibold block md:inline-block md:px-5 py-4 text-slate-50 md:text-slate-800 md:hover:text-cyan-700 text-xs tracking-widest uppercase" to="/">Home</Link>
+                        <Link activeClassName="nav-current" className="hover:bg-cyan-800 md:hover:bg-transparent border-y border-slate-50 md:border-none font-semibold block md:inline-block md:px-5 py-4 text-slate-50 md:text-slate-800 md:hover:text-cyan-700 text-xs tracking-widest uppercase" to="/portfolio/" partiallyActive={true}>Portfolio</Link>
+                        <Link activeClassName="nav-current" className="hover:bg-cyan-800 md:hover:bg-transparent font-semibold block md:inline-block md:pl-5 py-4 text-slate-50 md:text-slate-800 md:hover:text-cyan-700 text-xs tracking-widest uppercase" to="/contact/">Contact Me</Link>
                     </nav>
                 </div>
             </header>
