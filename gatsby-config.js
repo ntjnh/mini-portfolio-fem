@@ -8,8 +8,6 @@ module.exports = {
   },
   plugins: [
     'gatsby-plugin-postcss',
-    'gatsby-plugin-image',
-    'gatsby-plugin-sharp',
     {
       resolve: `gatsby-omni-font-loader`,
       options: {
@@ -37,7 +35,6 @@ module.exports = {
         path: `${__dirname}/portfolio`,
       }
     },
-    'gatsby-plugin-mdx',
-    'gatsby-transformer-sharp'
+    'gatsby-plugin-mdx'
   ],
 };
