@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faAnglesDown } from '@fortawesome/free-solid-svg-icons'
 import Layout from '../components/layout'
 import Seo from '../components/seo'
-import heroPhoto from '../images/home-hero.jpg'
+import heroPhoto from '../images/home/hero.jpg'
 import natePhoto from '../images/nate.jpg'
 
 const IndexPage = () => {
@@ -16,7 +16,7 @@ const IndexPage = () => {
         <Layout>
             <section className="home-hero md:aspect-[7/6] lg:aspect-[37/20] bg-cover bg-center bg-no-repeat mb-20 lg:mb-36 md:relative w-full" style={heroBg}>
                 <div className="md:absolute md:bg-white bottom-0 md:pb-24 px-8 pt-4 md:pt-12 md:w-3/4 lg:w-[41%]">
-                    <img className="aspect-[30/26] md:hidden mb-7 object-cover" src={heroPhoto} alt="" />
+                    <img className="aspect-[30/26] md:hidden mb-7 object-cover" src={heroPhoto} alt="Manage project displayed on a monitor" />
 
                     <h1 className="font-semibold leading-tight mb-7 md:mb-0 lg:mb-8 text-4xl lg:text-5xl">Hey, I'm Nate and I love solving problems with code.</h1>
 
