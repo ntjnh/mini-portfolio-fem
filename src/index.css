@@ -1,6 +1,28 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+
+@theme {
+    --font-sans: "Open Sans", ui-sans-serif, system-ui, sans-serif;
+    --font-serif: "Lora", ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+
+    --text-5xl: 2.5rem;
+    --text-6xl: 3rem;
+    --text-7xl: 3.75rem;
+    --text-8xl: 4.5rem;
+    --text-9xl: 6rem;
+
+    --leading-11: 2.75rem;
+    --leading-12: 3rem;
+
+    /* 
+        py-18 / mb-18   4.5rem
+    */
+
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 690px;
+    --breakpoint-lg: 880px;
+    --breakpoint-xl: 986px;
+    --breakpoint-2xl: 1110px;
+}
 
 @layer base {
     body {
