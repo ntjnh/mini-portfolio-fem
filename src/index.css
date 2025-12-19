@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 @import "tailwindcss";
 
 @theme {
@@ -12,10 +13,6 @@
 
     --leading-11: 2.75rem;
     --leading-12: 3rem;
-
-    /* 
-        py-18 / mb-18   4.5rem
-    */
 
     --breakpoint-sm: 576px;
     --breakpoint-md: 690px;
@@ -37,10 +34,10 @@
     h6 {
         @apply font-bold font-serif;
     }
+}
 
-    nav.header-nav > .nav-current {
-        @apply bg-cyan-700 md:bg-slate-50 text-slate-50 md:text-cyan-700;
-    }
+.header-nav .active {
+    @apply bg-cyan-700 md:bg-slate-50 text-slate-50 md:text-cyan-700;
 }
 
 .project-item:nth-child(odd) .text-col .text-col-inner {

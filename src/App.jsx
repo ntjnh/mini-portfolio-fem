@@ -1,7 +1,10 @@
-function App() {
+import Layout from './components/layout.jsx'
+import Home from './pages/home.jsx'
+
+export default function App() {
     return (
-        <h1>Minimalist portfolio website</h1>
+        <Layout>
+            <Home />
+        </Layout>
     )
 }
-
-export default App
