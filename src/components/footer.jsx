@@ -50,7 +50,10 @@ export default function Footer() {
                                 target="_blank"
                                 rel="noreferrer"
                             >
-                                <FontAwesomeIcon icon={faGithub} />
+                                <span className="sr-only">GitHub (opens in a new tab)</span>
+                                <FontAwesomeIcon
+                                    icon={faGithub}
+                                    aria-hidden="true" />
                             </a>
                         </li>
                         <li className="inline-block">
@@ -60,7 +63,10 @@ export default function Footer() {
                                 target="_blank"
                                 rel="noreferrer"
                             >
-                                <FontAwesomeIcon icon={faTwitter} />
+                                <span className="sr-only">Twitter (opens in a new tab)</span>
+                                <FontAwesomeIcon
+                                    icon={faTwitter}
+                                    aria-hidden="true" />
                             </a>
                         </li>
                         <li className="inline-block">
@@ -70,7 +76,10 @@ export default function Footer() {
                                 target="_blank"
                                 rel="noreferrer"
                             >
-                                <FontAwesomeIcon icon={faLinkedin} />
+                                <span className="sr-only">LinkedIn (opens in a new tab)</span>
+                                <FontAwesomeIcon
+                                    icon={faLinkedin}
+                                    aria-hidden="true" />
                             </a>
                         </li>
                     </ul>
