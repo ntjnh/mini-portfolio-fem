@@ -7,6 +7,7 @@ import Portfolio from './pages/portfolio/index.jsx'
 import ProjectLayout from './components/project-layout.jsx'
 import Project from './components/portfolio/project.jsx'
 import Contact from './pages/contact.jsx'
+import NotFound from './pages/404.jsx'
 
 createRoot(document.getElementById('root')).render(
     <StrictMode>
@@ -20,9 +21,9 @@ createRoot(document.getElementById('root')).render(
                     </Route>
                 </Route>
                 <Route path="contact" element={<Contact />} />
+                <Route path="*" element={<NotFound />} />
             </Routes>
 
-            {/* 404 */}
         </BrowserRouter>
     </StrictMode>
 )

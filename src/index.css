@@ -56,6 +56,22 @@
     text-decoration: underline;
 }
 
+.not-found {
+    min-height: 100vh;
+    position: relative;
+}
+
+.not-found footer {
+    bottom: 0;
+    width: 100%;
+}
+
+@media (height > 806px) and (width < 576px), (height > 476px) and (width > 576px), (height > 595px) and (width >= 880px) {
+    .not-found footer {
+        position: fixed;
+    }
+}
+
 @media (max-width: 767px) {
     .home-hero {
         background-image: none !important;

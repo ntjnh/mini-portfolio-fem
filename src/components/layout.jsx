@@ -3,12 +3,12 @@ import Header from './header'
 import Cta from './cta'
 import Footer from './footer'
 
-export default function Layout({ children, isContact }) {
+export default function Layout({ children, hideCta, notFound }) {
     const [ menuVisible, setMenuVisible ] = useState(false)
     const menuToggleClass = menuVisible ? 'block' : 'hidden'
 
     return (
-        <div className="bg-slate-50">
+        <div className={notFound ? `bg-slate-50 not-found` : `bg-slate-50`}>
             <Header
                 menuToggleClass={menuToggleClass}
                 menuVisible={menuVisible}
@@ -16,7 +16,7 @@ export default function Layout({ children, isContact }) {
 
             <main className="container mx-auto">
                 {children}
-                {!isContact && <Cta />}
+                {!hideCta && <Cta />}
             </main>
 
             <Footer />
