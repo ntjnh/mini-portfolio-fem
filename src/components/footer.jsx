@@ -49,8 +49,8 @@ export default function Footer() {
                                 href="https://github.com"
                                 target="_blank"
                                 rel="noreferrer"
+                                aria-label="GitHub (opens in a new tab)"
                             >
-                                <span className="sr-only">GitHub (opens in a new tab)</span>
                                 <FontAwesomeIcon
                                     icon={faGithub}
                                     aria-hidden="true" />
@@ -62,8 +62,8 @@ export default function Footer() {
                                 href="https://twitter.com"
                                 target="_blank"
                                 rel="noreferrer"
+                                aria-label="Twitter (opens in a new tab)"
                             >
-                                <span className="sr-only">Twitter (opens in a new tab)</span>
                                 <FontAwesomeIcon
                                     icon={faTwitter}
                                     aria-hidden="true" />
@@ -75,8 +75,8 @@ export default function Footer() {
                                 href="https://linkedin.com"
                                 target="_blank"
                                 rel="noreferrer"
+                                aria-label="LinkedIn (opens in a new tab)"
                             >
-                                <span className="sr-only">LinkedIn (opens in a new tab)</span>
                                 <FontAwesomeIcon
                                     icon={faLinkedin}
                                     aria-hidden="true" />
