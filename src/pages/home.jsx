@@ -2,7 +2,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faAnglesDown } from '@fortawesome/free-solid-svg-icons'
 import { Link } from 'react-router'
 import heroPhoto from '../assets/home/hero.jpg'
-import natePhoto from '../assets/nate.png'
+import natePhoto from '../assets/nate-photo.png'
+import natePhotoX2 from '../assets/nate-photo-x2.png'
 
 export default function Home() {
     const heroBg = {
@@ -37,8 +38,10 @@ export default function Home() {
                 <div className="lg:pr-4 md:w-2/5 lg:w-1/2">
                     <img
                         className="max-w-full mb-8 md:mb-0 md:aspect-7/15 lg:aspect-auto object-cover"
+                        srcSet={`${natePhoto}, ${natePhotoX2} 2x`}
                         src={natePhoto}
                         alt="Nate" />
+
                 </div>
 
                 <article className="w-full md:w-3/5 lg:w-1/2" id="about">
