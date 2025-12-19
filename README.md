@@ -1,4 +1,7 @@
 # Minimalist Portfolio
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/d41fd1aa-11f9-4430-b075-49ba1f3a9bb5/deploy-status)](https://app.netlify.com/projects/ntjnh-fem-mini-portfolio/deploys)
+
 A simple static website based on Frontend Mentor's [Minimalist portfolio website challenge](https://www.frontendmentor.io/challenges/minimalist-portfolio-website-LMy-ZRyiE).
 
 ## Table of contents
@@ -18,7 +21,7 @@ Also, seeing as this challenge is to build a portfolio site, please feel free to
 
 ### Finished Project
 
-**Live URL:** TBC
+**Live URL:** [ntjnh-fem-mini-portfolio.netlify.app](https://ntjnh-fem-mini-portfolio.netlify.app)
 
 ## Built with
 
@@ -39,3 +42,8 @@ Also, seeing as this challenge is to build a portfolio site, please feel free to
 - ~~[Getting Started tutorial](https://www.gatsbyjs.com/docs/tutorial/getting-started/) - Gatsby's own tutorial was a useful reference~~
 - ~~[Gatsby Link API](https://www.gatsbyjs.com/docs/reference/built-in-components/gatsby-link/)~~
 - ~~[Table of Components](https://mdxjs.com/table-of-components/) - MDX list of components; another useful reference~~
+- [React Router - Routing](https://reactrouter.com/start/declarative/routing)
+- [Tailwind CSS - Default theme variable reference](https://tailwindcss.com/docs/theme#default-theme-variable-reference)
+- [MDN - Creating complex media queries](https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Media_queries/Using#creating_complex_media_queries)
+- [MDN - How do you create responsive images?](https://developer.mozilla.org/en-US/docs/Web/HTML/Guides/Responsive_images#how_do_you_create_responsive_images)
+- [MDN - ARIA: aria-hidden attribute](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Reference/Attributes/aria-hidden)
